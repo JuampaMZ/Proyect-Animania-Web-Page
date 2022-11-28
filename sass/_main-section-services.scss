@@ -1,0 +1,16 @@
+.main-section-services{
+    background-color: rgb(153, 255, 0);
+    padding: 3vw 5vw 5vw 5vw;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    &-h2{
+        font-size: 60px;
+        color: yellow;
+        -webkit-text-stroke: 0.1px black;
+        padding-bottom: 2vw;
+    }
+}

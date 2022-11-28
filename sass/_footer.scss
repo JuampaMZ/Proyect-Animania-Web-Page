@@ -1,0 +1,55 @@
+.footer{
+    &-section-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        align-items: center;
+        width: 100%;
+        padding: 5vw;
+        background-color: rgb(88, 88, 88);
+        text-align: center;
+        color: #FFFFFF;
+        &-h2{
+
+            font-size: 50px;
+        }
+        &-social-networks{
+            &-nav{
+                position: relative;
+                display: flex;
+                gap: 20px;
+                z-index: 10;
+                img{
+                    width: 40px;
+                }
+            }
+        }
+        &-phone{
+            font-size: 20px;
+
+        }
+        &-logo-letters-black{
+            width: 150px;
+        }
+
+        @media (min-width: 768px) {
+            &{
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    }
+}
+
+
+
+.fb:hover{
+    filter: opacity(90%) drop-shadow(15px 15px 0 hsl(214, 91%, 53%));
+    transition: all 0.5s;
+}
+
+.ig:hover{
+    filter: opacity(90%) drop-shadow(15px 15px 0 #DD2A7B);
+    transition: all 1s;
+}

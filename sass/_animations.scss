@@ -1,0 +1,69 @@
+
+.bubbles{
+    position:fixed;
+    z-index: 0;
+    bottom: 0;
+}
+
+.bubble{
+    border-radius: 50%;
+    background-color: #fff;
+    filter: opacity(30%);
+    position:absolute;
+    bottom: 0px;    
+}
+
+
+@for $iterator from 1 through 20 {
+    .bubble:nth-child(#{$iterator}) {
+        $random-1-to-100: random($limit: (70)/10)+vw;
+        width: $random-1-to-100;
+        height: $random-1-to-100;
+        border-radius: 50%;
+        background-color: #ffffff;
+        filter: opacity(30%);
+        position:absolute;
+        bottom: 0px;
+        left: random($limit: (87))+vw;
+        z-index: 0;
+        animation: bubble#{$iterator} ((random($limit: (70))+15)/10)+s linear infinite;
+    }
+
+    @keyframes bubble#{$iterator} {
+        0%{
+            bottom: 0;
+            filter: opacity(0%);
+        }
+    
+        30%{
+            transform: translateX((random(70))/10+vw);
+        }
+    
+        50%{
+            filter: opacity(50%);
+        }
+    
+        80%{
+            transform: translateX((random(20))/10+vw);
+        }
+    
+        100%{
+            bottom: 100vh;
+            filter: opacity(0%);
+        }
+    }
+}
+
+@keyframes movimiento{
+    0% {
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-30px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

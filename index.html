@@ -19,25 +19,25 @@
             <div class="header-nav-icon-hambur">
                 <svg class="header-nav-icon-hambur-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
             </div>
-            <div class="header-nav-mobile d-none">
-                <svg class="header-nav-mobile-icon-cross-svg" xmlns="http://www.w3.org/2000/svg" width="96" height="96"><path d="m53.657 48 25.171-25.172a4 4 0 1 0-5.656-5.656L48 42.343 22.829 17.172a4 4 0 0 0-5.657 5.656L42.344 48 17.172 73.172a4 4 0 1 0 5.657 5.656L48 53.657l25.172 25.171C73.953 79.609 74.977 80 76 80s2.048-.391 2.828-1.172a4 4 0 0 0 0-5.656L53.657 48z"/></svg>
-                <ul class="header-nav-mobile-ul d-none">
-                    <li><a href="#about-us">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#themes">Tematicas</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
+            <ul class="header-nav-tablet-monitors-ul d-none">
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#themes">Tematicas</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="header-nav-mobile">
+            <div class="header-nav-mobile-icon-cross">
+                <svg class="header-nav-mobile-icon-cross-svg" xmlns="http://www.w3.org/2000/svg" width="96" height="96"><g fill-rule="evenodd"></g><path d="m53.657 48 25.171-25.172a4 4 0 1 0-5.656-5.656L48 42.343 22.829 17.172a4 4 0 0 0-5.657 5.656L42.344 48 17.172 73.172a4 4 0 1 0 5.657 5.656L48 53.657l25.172 25.171C73.953 79.609 74.977 80 76 80s2.048-.391 2.828-1.172a4 4 0 0 0 0-5.656L53.657 48z"/></svg>
             </div>
-            <div class="header-nav-tablet-monitors d-none">
-                <ul class="header-nav-tablet-monitors-ul">
-                    <li><a href="#about-us">Nosotros</a></li>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#themes">Tematicas</a></li>
-                    <li><a href="#gallery">Galeria</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </div>
+            <ul class="header-nav-mobile-ul">
+                <li><a href="#about-us">Nosotros</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#themes">Tematicas</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
         </nav>
     </header>
     <main class="main">
@@ -131,7 +131,7 @@
                     
                 </div>
                 <div class="main-section-themes-theme">
-                    <img class="main-section-themes-theme-img" src="img/Kermesse-Aqua.JPG" alt="">
+                    <img class="main-section-themes-theme-img" src="img/kermesse-Aqua.JPG" alt="">
                     <div class="main-section-themes-theme-description">
                         <h2>Kermesse-Aqua</h2>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis</p>
@@ -198,15 +198,25 @@
         </section>
 
         <section id="gallery" class="main-section-gallery">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Servicio 1</li>
-                <li>Servicio 2</li>
-                <li>Servicio 3</li>
-                <li>Servicio 4</li>
-                <li>Servicio 5</li>
-                <li>Servicio 6</li>
-            </ul>
+            <h2 class="main-section-gallery-h2">Galería</h2>
+            <div class="main-section-gallery-slider">
+                <div class="main-section-gallery-slider-viewer">
+                    <div class="main-section-gallery-slider-viewer-move-left"></div>
+                    <div class="main-section-gallery-slider-viewer-slides">
+                        <img class="slide-1 translate" src="img/animadores-camo-flor.jpg" alt="">
+                        <img class="slide-2 translate-r" src="img/animadores-piramide.jpg" alt="">
+                        <img class="slide-3 d-none" src="img/animadores-mary-seba.jpg" alt="">
+                        <img class="slide-4 translate-l" src="img/animadores-rueda.jpg" alt="">
+                    </div>
+                    <div class="main-section-gallery-slider-viewer-move-right"></div>
+                </div>
+                <div class="targets">
+                    <div class="target-1 active"></div>
+                    <div class="target-2"></div>
+                    <div class="target-3"></div>
+                    <div class="target-4"></div>
+                </div>
+            </div>
         </section>
         
         <div class="bubbles">

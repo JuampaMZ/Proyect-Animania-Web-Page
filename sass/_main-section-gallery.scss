@@ -1,0 +1,133 @@
+.main-section-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5vw;
+    position: relative;
+    z-index: 10;
+    &-h2{
+        text-align: center;
+        padding: 3vw;
+        font-size: 60px;
+        color: orange;
+        -webkit-text-stroke: 0.1px black;
+    }
+    &-slider{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 4vh;
+        &-viewer{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 3vw;
+            &-move-left{
+                position: absolute;
+                z-index: 25;
+                width: 40px;
+                height: 40px;
+                background-color: rgba(0, 0, 0, 0.495);
+            }
+            &-slides{
+                position: relative;
+                display: flex;
+                width: 80vw;
+                height: 80vw;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+            }
+            &-move-right{
+                position: absolute;
+                right: 0;
+                z-index: 29;
+                background-color: rgba(0, 0, 0, 0.495);
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+.translate-r {
+    transform: translateX(80vw);
+    transition: 0.3s all;
+}
+
+.translate-l {
+    transform: translateX(-80vw);
+    transition: 0.3s all;
+}
+
+.translate {
+    transform: translateX(0px);
+    transition: 0.3s all;
+}
+
+.targets {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+
+@for $iterator from 1 through 4 {
+    .target-#{$iterator} {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        filter: opacity(100%);
+        border: solid 1px black;
+    }
+}
+
+.active{
+    background-color: black;
+}
+
+@for $iterator from 1 through 4 {
+    .slide-#{$iterator} {
+        position: absolute;
+        max-width: 80vw;
+        max-height: 80vw;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .translate-r {
+        transform: translateX(50vw);
+        transition: 0.3s all;
+    }
+    
+    .translate-l {
+        transform: translateX(-50vw);
+        transition: 0.3s all;
+    }
+
+    .main-section-gallery-slider-viewer-move-left {
+        position: relative;
+    }
+    
+    .main-section-gallery-slider-viewer-move-right {
+        position: relative;
+    }
+    
+    .main-section-gallery-slider-viewer-slides {
+        position: relative;
+        display: flex;
+        width: 50vw;
+        height: 50vw;
+    }
+
+    @for $iterator from 1 through 4 {
+        .slide-#{$iterator} {
+            max-width: 50vw;
+            max-height: 50vw;
+        }
+    }    
+}

@@ -9,8 +9,8 @@
         background-color: rgb(88, 88, 88);
         text-align: center;
         color: #FFFFFF;
+        padding: 10vw;
         &-h2{
-
             font-size: 50px;
         }
         &-social-networks{
@@ -18,7 +18,7 @@
                 position: relative;
                 display: flex;
                 gap: 20px;
-                z-index: 10;
+                z-index: 9;
                 img{
                     width: 40px;
                 }

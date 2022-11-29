@@ -14,7 +14,11 @@
             padding: 10px;
         }
         &-icon-hambur{
+            position: relative;
+            z-index: 1;
             &-svg{
+                position: relative;
+                z-index: -2;
                 fill: #FFFFFF;
                 margin: 30px;
             }
@@ -33,57 +37,84 @@
             width: 0px;
             transition: 1s all;
             &-icon-cross{
-                fill: #FFFFFF;
-                transform: scale(0.4);
+                width: 100px;
+                &-svg{
+                    position: relative;
+                    z-index: -1;
+                    fill: #ffffff;
+                    transform: scale(0.4);
+                }
                 &:hover {
-                    fill: orange;
+                    .header-nav-mobile-icon-cross-svg{
+                        fill: orange;
+                    }
                 }
             }
             &-ul{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
-                width: 100%;
+                display: none;
                 height: 70vh;
-                a{
-                    padding: 20px 75px 20px 75px;
-                }
-            }
-        }
-        
-        @media (min-width: 768px) {
-            &-tablet-monitors{
-                display: flex;
-                &-ul{
-                    display: flex;
-                    width: 70%;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    li {
-                        list-style: none;
-                        a{
-                            color: rgb(255, 255, 255);
-                            text-decoration: none;
-                            padding: 40px 2.5vw 40px 2.5vw;
-                            &:hover{
-                                color: orange;
-                                border-bottom: 3px solid orange;
-                                font-weight: bold;
-                            }
+                li {
+                    list-style: none;
+                    a{
+                        padding: 20px 75px 20px 75px;
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        &:hover{
+                            color: orange;
+                            border-bottom: 3px solid orange;
+                            font-weight: bold;
                         }
                     }
                 }
             }
         }
+        
+        @media (min-width: 768px) {
+            &-icon-hambur{
+                display: none;
+            }
+            &-tablet-monitors-ul{
+                display: flex;
+                width: 70%;
+                justify-content: space-evenly;
+                li {
+                    list-style: none;
+                    a{
+                        color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        padding: 40px 2.5vw 40px 2.5vw;
+                        &:hover{
+                            color: orange;
+                            border-bottom: 3px solid orange;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        &:hover{
+            background-color: #43d02ab6;
+            box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.463);
+            transition: 1s all;
+        }
+        &:not(:hover){
+            background-color: transparent;
+            transition: 1s all;
+        }
     }
-    &:hover{
-        background-color: #43d02ab6;
-        box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.463);
-        transition: 1s all;
-    }
-    &:not(:hover){
-        background-color: transparent;
-        transition: 1s all;
-    }
+}
+
+.show-nav-mobile{
+    z-index: 12;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.463);
+    transition: 0.5s all;
+}
+
+.show-nav-mobile-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }

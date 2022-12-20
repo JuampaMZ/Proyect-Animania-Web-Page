@@ -1,3 +1,5 @@
+@use 'mixinsfunc';
+
 .footer{
     &-section-contact{
         display: flex;
@@ -10,9 +12,6 @@
         text-align: center;
         color: #FFFFFF;
         padding: 10vw;
-        &-h2{
-            font-size: 50px;
-        }
         &-social-networks{
             &-nav{
                 position: relative;
@@ -25,7 +24,7 @@
             }
         }
         &-phone{
-            font-size: 20px;
+            font-size: mixinsfunc.pixeles-rem(20);
 
         }
         &-logo-letters-black{

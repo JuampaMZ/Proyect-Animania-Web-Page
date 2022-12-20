@@ -1,7 +1,30 @@
+@use 'mixinsfunc';
+
 .d-none {
     display: none;
 }
 
 body {
     overflow-x: hidden;
+}
+
+.h2 {
+    font-size: mixinsfunc.pixeles-rem(60);
+    text-align: center;
+    padding: 3vw;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.h2-footer {
+    font-size: mixinsfunc.pixeles-rem(50);
+}
+
+.h3{
+    font-size: mixinsfunc.pixeles-rem(30);
+    padding: 20px;
+}
+
+.p-theme {
+    font-size: mixinsfunc.pixeles-rem(20);
+    padding: 5px 10px;
 }

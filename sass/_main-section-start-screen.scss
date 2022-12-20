@@ -1,3 +1,5 @@
+@use 'mixinsfunc';
+
 .main-section-start-screen {
     position: relative;
     height: 100vh;
@@ -5,7 +7,6 @@
         position:absolute;
         background-image: url(../img/bg-start-screen.jpg);
         background-size: cover;
-        background-clip: text;
         background-attachment: fixed;
     /*     background-position: -40vw 0vw; */
         width: 100%;
@@ -57,13 +58,13 @@
         color: #ffffff;
         padding: 10px;
         font-weight: bold;
-        font-size: 23px;
+        font-size: mixinsfunc.pixeles-rem(23);
         background-color: #00000098;
     }
 
     @media (min-width: 768px) {
         &-logo-p{
-            font-size: 69.12px;
+            font-size: mixinsfunc.pixeles-rem(69.12);
         }
     }
 

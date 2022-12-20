@@ -7,6 +7,9 @@
         position:absolute;
         background-image: url(../img/bg-start-screen.jpg);
         background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
         background-attachment: fixed;
     /*     background-position: -40vw 0vw; */
         width: 100%;

@@ -1,13 +1,17 @@
 .main-section-gallery {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 5vw;
     position: relative;
     z-index: 1;
-    background-color: rgb(52, 253, 106);
+    background: -moz-linear-gradient(#0f3443 0%, #34e69f 100%); /* FF3.6-15 */ 
+    background: -webkit-linear-gradient(#0f3443 0%,#34e69f 100%); /* Chrome10-25,Safari5.1-6 */ 
+    background: linear-gradient(#0f3443 0%,#34e69f 100%);
     &-h2{
-        color: orange;
+        padding-bottom: 2vh;
+        color: rgb(205, 39, 39);
     }
     &-slider{
         display: flex;
@@ -15,7 +19,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
-        gap: 4vh;
+        gap: 3vh;
         &-viewer{
             position: relative;
             display: flex;
@@ -94,7 +98,7 @@
 .targets {
     display: flex;
     flex-direction: row;
-    gap: 3px;
+    gap: 4px;
 }
 
 .target{

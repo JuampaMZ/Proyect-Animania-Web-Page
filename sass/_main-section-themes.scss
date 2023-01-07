@@ -1,7 +1,8 @@
 .main-section-themes {
     position: relative;
+    width: 100%;
     &-h2{
-        color: greenyellow;
+        color: #5fe539;
     }
     &-bg {
         position: absolute;
@@ -14,7 +15,7 @@
     }
     &-container{
         display:grid;
-        grid-template-columns: 38vw 38vw;
+        grid-template-columns: 38% 38%;
         grid-template-rows: repeat(7, auto);
         grid-template-areas: 
         "theme-1 theme-2"
@@ -44,7 +45,9 @@
         position: relative;
         border: 1px dashed green;
         border-radius: 10px;
-        background-color: rgb(160, 199, 52);
+        background: -moz-linear-gradient(left, #8af68a 0%, #44c521 100%); /* FF3.6-15 */ 
+        background: -webkit-linear-gradient(left, #8af68a 0%, #44c521 100%); /* Chrome10-25,Safari5.1-6 */ 
+        background: linear-gradient(to right, #8af68a 0%, #44c521 100%);
         &-img {
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
@@ -56,7 +59,6 @@
         &-description{
             position: relative;
             width: 100%;
-            background-color: rgba(39, 155, 217, 0.303);
             text-align: center;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
@@ -67,7 +69,7 @@
             }
         }
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             transition: 1s all;
             cursor: pointer;
         }
@@ -81,7 +83,7 @@
         .main-section-themes {
             &-container{
                 display:grid;
-                grid-template-columns: 30vw 30vw 30vw;
+                grid-template-columns: 30% 30% 30%;
                 grid-template-rows: repeat(5, auto);
                 grid-template-areas:
                 "theme-1 theme-2 theme-3"

@@ -1,6 +1,8 @@
 .main-section-about-us {
-    background-color: rgb(251, 255, 0);
-    padding: 0vw 5vw 3vw 5vw;
+    background: -moz-linear-gradient(left, #2bbfe4 0%, #eaecc6 100%);
+    background: -webkit-linear-gradient(#2bbfe4 0%,#eaecc6 100%);
+    background: linear-gradient(#2bbfe4 0%,#eaecc6 100%);
+    padding: 5vw 5vw 10vw 5vw;
     position: relative;
     z-index: 2;
     display: flex;
@@ -9,12 +11,16 @@
     align-items: center;
     width: 100%;
     &-h2{
-        color: rgb(255, 115, 0);
+        color: rgb(232, 235, 25);
+        
     }
     &-p{
+        padding: 0px 20px;
         text-align: justify;
     }
     &-div-img {
+        display: flex;
+        align-items: center;
         padding: 5vw;
         & img{
             width: 70vw;
@@ -29,6 +35,9 @@
         align-items: center;
         & img{
             width: 40vw;
+        }
+        &-h2{
+            padding-top: 0px;
         }
     }
     

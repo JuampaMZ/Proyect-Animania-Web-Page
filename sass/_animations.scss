@@ -14,7 +14,7 @@
 }
 
 
-@for $iterator from 1 through 20 {
+@for $iterator from 1 through 15 {
     .bubble:nth-child(#{$iterator}) {
         $random-1-to-100: random($limit: (70)/10)+vw;
         width: $random-1-to-100;

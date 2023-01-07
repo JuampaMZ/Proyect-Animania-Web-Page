@@ -1,6 +1,9 @@
 .main-section-services{
-    background-color: rgb(153, 255, 0);
-    padding: 1vw 5vw 5vw 5vw;
+    background: -moz-linear-gradient(#edaef9 0%, #81b1fa 100%); /* FF3.6-15 */ 
+    background: -webkit-linear-gradient(#edaef9 0%,#81b1fa 100%); /* Chrome10-25,Safari5.1-6 */ 
+    background: linear-gradient(#edaef9 0%,#81b1fa 100%);
+    width: 100%;
+    padding: 50px 0vw 70px 0vw;
     position: relative;
     z-index: 2;
     display: flex;
@@ -8,6 +11,6 @@
     align-items: center;
     gap: 20px;
     &-h2{
-        color: yellow;
+        color: orange;
     }
 }

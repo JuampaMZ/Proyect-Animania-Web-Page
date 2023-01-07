@@ -7,8 +7,6 @@ let ul_hidden_mobile = document.getElementsByClassName("header-nav-mobile-ul")
 icon_hamburg[0].addEventListener("click", show_nav_mobile);
 icon_cross[0].addEventListener("click", show_nav_mobile);
 
-
-
 function show_nav_mobile(event) {
     nav_hidden_mobile[0].classList.toggle("show-nav-mobile")
     ul_hidden_mobile[0].classList.toggle("show-nav-mobile-ul")

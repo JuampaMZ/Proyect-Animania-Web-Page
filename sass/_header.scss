@@ -17,6 +17,7 @@
             position: relative;
             z-index: 1;
             &-svg{
+                transform: translateZ(-10px);
                 position: relative;
                 z-index: -2;
                 fill: #FFFFFF;
